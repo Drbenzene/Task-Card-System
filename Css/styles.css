@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blaka&display=swap');
+:root {
+  --mainBlack: black;
+  --mainWhite: white;
+  --mainRed: red;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+}
+
+input:focus{
+  outline: 2px solid var(--mainWhite);
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  font-family: Krona
+}
+
+img {
+  width: 100%
+}
+
+/* End of Global Selector */
+
+.loginCol {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 1rem;
+  /* background-color: rgb(248, 244, 244) */
+}
+
+.loginCol > div {
+  margin: 0px 10px
+}
+
+.form-inputCol {
+  width: 70%;
+  font-size: 1.2rem;
+  font-weight: bold;
+
+}
+
+.navbar-brand {
+  font-size:  30px;
+  font-family: Blaka ;
+}
+
+.form-inputCol input {
+  outline: none;
+}
+
+.passwordForget {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.loginSection {
+  /* margin-top: 10%; */
+  background-color: black;
+  color: var(--mainWhite);
+  padding: 10% 0px;
+  border-radius: 15px 0px;
+}
+
+.welcomeBack {
+  text-align: center;
+}
+
+.loginButton {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.loginButton  > button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  outline: 2px solid var(--mainWhite)
+}
+
+.loginButton  > button:hover {
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+
+

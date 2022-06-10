@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Blaka&display=swap");
+:root {
+  --mainBlack: black;
+  --mainWhite: white;
+  --mainRed: red;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: 2px solid var(--mainWhite);
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Krona;
+  /* background-image: url('../Img/17450.jpg');
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
+img {
+  width: 100%;
+}
+
+/* .asideCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+hr {
+  width: 50%;
+  height: 1.5px;
+  /* border: none; */
+  background-color: black;
+}
+
+.fa-trash-can:hover {
+  color: var(--mainRed);
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  transform: translate(-50%, -50%);
+}
+
+.fa-star:hover {
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  transform: translate(-50%, -50%);
+}
+
+.fa-ellipsis-vertical:hover {
+  cursor: pointer;
+}
+
+.dotToggle {
+  line-height: 0px;
+  color: white;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 10px;
+  /* position: absolute;
+  right: 0px;
+  bottom: 40px; */
+  display:none;
+}
+
+.dotToggle p:hover {
+  color: red;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.5s ease-in-out;
+  transform: translate-y(-50%);
+}
+
+.addTaskBtn {
+  margin: 60px 0px;
+  display: flex;
+  align-items: center;
+  margin-left: 1.25rem;
+}
+
+.addTaskBtn > button {
+  padding: 0.3125rem 1.25rem;
+  font-weight: bold;
+  background-color: black;
+}
+.asideIcons {
+  display: flex;
+  padding: 10px 0px;
+  font-size: 1.1rem;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.asideIcons:hover {
+  background-color: rgb(2, 2, 2);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+.asideIcons > div {
+  margin: 0px 10px;
+}
+
+.asideIcons > i {
+  color: rgb(0, 0, 0);
+  margin: 0.625rem 1.25rem;
+}
+
+.asideIcons > i:hover {
+  color: rgb(255, 255, 255);
+}
+
+.asideIcons > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardIcons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardCol {
+  margin-top: 60px;
+  min-width: 250px;
+  min-height: 300px;
+  max-height: 300px;
+  max-width: 250px;
+}
+
+.cardCol i {
+  color: rgb(112, 96, 96);
+}
+#icon-star {
+  margin-right: 1.875rem;
+}
+
+.row-cols-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media Responsiveness Starts Here */
+
+@media only screen and (max-width: 768px) {
+  .asideIcons > div {
+    display: none;
+  }
+
+  .asideIcons i {
+    margin: 1.25rem;
+  }
+
+  .theRestOfCol {
+    margin-left: 20px;
+  }
+
+  .addTaskBtn {
+    margin-left: 1rem;
+  }
+  .cardCol {
+    margin-top: 0px;
+    /* min-width: 300px; */
+  }
+
+  .theSide {
+    margin-right: 30px;
+    left: 20px;
+  }
+
+  .asideCol {
+    position: fixed;
+  }
+
+  .row-cols-4 {
+    margin-top: 3.125rem;
+  }
+
+  /* .theRestOfCol {
+    position: absolute
+  } */
+}
+
+@media only screen and (max-width: 768px) {
+  .modal-content {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
