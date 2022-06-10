@@ -9,4 +9,4 @@ This Application Aim at helping users stay organized by pining their todo tasks 
 
 Demo Users Fetched From
 
-[Jsonplaceholder](https://jsonplaceholder.typicode.com/users)
+[Json Place Holder](https://jsonplaceholder.typicode.com/users)
